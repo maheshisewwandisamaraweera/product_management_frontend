@@ -1,8 +1,8 @@
-"use client";  // This marks the component as a client-side component
+// src/components/Navbar.tsx
+"use client";
 
 import Link from "next/link";
 import { useState } from "react";
-import React from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,8 +31,9 @@ const Navbar = () => {
           <Link href="/products" className="hover:text-gray-300">
             Products
           </Link>
-          <Link href="/dashboard" className="hover:text-gray-300">
-            Dashboard
+         
+          <Link href="/products/add" className="bg-white text-blue-600 px-4 py-2 rounded-md hover:bg-gray-200">
+            Add Product
           </Link>
           <Link href="/login" className="bg-white text-blue-600 px-4 py-2 rounded-md hover:bg-gray-200">
             Login
